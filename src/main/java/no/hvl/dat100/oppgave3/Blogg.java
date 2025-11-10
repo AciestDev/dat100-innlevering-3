@@ -1,6 +1,5 @@
 package no.hvl.dat100.oppgave3;
 
-import no.hvl.dat100.common.TODO;
 import no.hvl.dat100.oppgave1.*;
 
 public class Blogg {
@@ -63,7 +62,7 @@ public class Blogg {
 
         return inserted;
 	}
-	
+	@Override
 	public String toString() {
         String toStringVar = Integer.toString(nesteLedige) + "\n";
         for (int i = 0 ; i < nesteLedige; i++) {

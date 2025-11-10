@@ -23,16 +23,14 @@ public class Bilde extends Tekst {
 		this.url = url;
 	}
 
-	@Override
-	public String toString() {
-        return "BILDE\n" + this.getId() + "\n" + this.getBruker() + "\n" + this.getDato()
-                + "\n" + this.getLikes() + "\n" + this.getTekst() + "\n" + url + "\n";
-	}
+    @Override
+    public String toString() {
+        return "BILDE\n" + getToStringData() + url + "\n";
+    }
 
 	// Metoden nedenfor er kun for valgfri oppgave 6
 	public String toHTML() {
-		
-		throw new UnsupportedOperationException(TODO.method());
+		return super.toHTML() + "<iframe src=\"" + url + "\" height=600 width=800></iframe><hr>";
 				
 	}
 }

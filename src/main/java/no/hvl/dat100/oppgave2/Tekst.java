@@ -28,15 +28,19 @@ public class Tekst extends Innlegg {
 		this.tekst = tekst;
 	}
 
-	@Override
-	public String toString() {
-        return "TEKST\n" + super.toString() + tekst + "\n";
-	}
+    @Override
+    public String toString() {
+        return "TEKST\n" + getToStringData();
+    }
+
+    // This method returns ONLY the data, not the TEKST label
+    protected String getToStringData() {
+        return super.toString() + tekst + "\n";
+    }
 	
 	// Metoden nedenfor er kun for valgfri oppgave 6
+    @Override
 	public String toHTML() {
-			
-		throw new UnsupportedOperationException(TODO.method());
-				
+		return super.toHTML() + "\n<p>" + tekst + "</p>\n";
 	}
 }
