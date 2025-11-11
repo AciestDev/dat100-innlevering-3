@@ -45,15 +45,15 @@ public class LesBlogg {
                 String tekst = scanner.nextLine();
                 if (type.equals(BILDE)) {
                     String url = scanner.nextLine();
-                    blogg.leggTil(new Bilde(id, bruker, dato, tekst, url));
+                    blogg.leggTil(new Bilde(id, bruker, dato, likes, tekst, url));
                 } else {
-                    blogg.leggTil(new Tekst(id, bruker, dato, tekst));
+                    blogg.leggTil(new Tekst(id, bruker, dato, likes, tekst));
                 }
             }
 
             scanner.close();
 
-        } catch (FileNotFoundException ex) {
+        } catch (FileNotFoundException e) {
 
         }
         return blogg;
