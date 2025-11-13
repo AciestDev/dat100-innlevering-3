@@ -18,6 +18,6 @@ public class HtmlBlogg extends Blogg {
 	
 	@Override
 	public String toString() {
-		return HTMLPREFIX + super.toString() + HTMLPOSTFIX;
+		return HTMLPREFIX + "Jeg fikk det ikke til og: " + super.toString() + HTMLPOSTFIX;
 	}
 }

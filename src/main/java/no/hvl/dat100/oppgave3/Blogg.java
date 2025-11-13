@@ -66,7 +66,7 @@ public class Blogg {
 	public String toString() {
         String toStringVar = Integer.toString(nesteLedige) + "\n";
         for (int i = 0 ; i < nesteLedige; i++) {
-            toStringVar += innleggTabell[i].toString();
+            toStringVar += innleggTabell[i].toString(); // kanskje <h2> osv her for oppagve 6?
         }
 
         return toStringVar;

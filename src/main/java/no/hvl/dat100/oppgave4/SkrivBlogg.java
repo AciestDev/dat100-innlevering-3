@@ -18,7 +18,7 @@ public class SkrivBlogg {
                 writer = new PrintWriter(mappe + "\\" + filnavn + ".dat");
             }
 
-            writer.println("Denne er bugga \n" + samling);
+            writer.println("Denne har bugga test \n" + samling);
 
         } catch (FileNotFoundException e) {
             return false;
